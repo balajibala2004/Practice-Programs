@@ -1,0 +1,35 @@
+
+import java.util.*;
+public class seventeen {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		long a,b;
+		int i = 0,carry = 0;
+		int[] sum = new int[10];
+		Scanner Scanner = new Scanner(System.in);
+		System.out.println("enter first binary number : ");
+		a = Scanner.nextLong();
+		System.out.println("enter second binary number : ");
+		b = Scanner.nextLong();
+		Scanner.close();
+		while(a !=0 || b !=0)
+		{
+			sum[i++] = (int)((a %10  + b%10 +carry)%2);
+			carry = (int) ((a % 10 + b % 10 + carry) / 2);
+			a = a / 10;
+			b = b / 10;
+		}
+		if (carry != 0 ) {
+			sum[i++] = carry;
+		}
+		--i;
+		System.out.print("output : ");
+		while(i >=0)
+		{
+			System.out.print(sum[i--]);
+		}
+		System.out.print("\n");
+	}
+
+}
