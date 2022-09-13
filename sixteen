@@ -1,0 +1,30 @@
+
+import java.util.*;
+public class sixteen {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("enter how many types of faces you want");
+		int l = 1;
+		Scanner o = new Scanner(System.in);
+		int n = o.nextInt();
+		String[] a = new String[10] ;
+		Scanner y = new Scanner(System.in);
+		for(int i = 0;i<n;i++)
+		{   
+			System.out.println("enter your input" + l );
+			a[i] = y.nextLine();
+			l++;
+		}
+		
+		System.out.println();
+		System.out.println("your faces are :  ");
+		System.out.println();
+		for (int k = 0; k<n;k++)
+		{
+			System.out.println(a[k]);
+		}
+
+	}
+
+}
