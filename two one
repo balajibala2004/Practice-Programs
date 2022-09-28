@@ -1,0 +1,30 @@
+
+public class A 
+{
+	
+	
+	public static String toOct(int decimal)
+	{
+		int REM;
+		String oct = "";
+		char hexchars[] = {'0','1','2','3','4','5','6','7'};
+
+		while(decimal>0)
+		{
+			REM = decimal%8;
+			oct = hexchars[REM] + oct;
+			decimal = decimal/8;
+		}
+		return oct;
+    }
+		
+	
+
+	public static void main(String[] args) {
+		System.out.println("octal of 10 is :"  + toOct(8));
+		System.out.println("octal of 15 is : "  + toOct(19));
+		System.out.println("octal of 289 is : "  + toOct(81));
+
+	}
+
+}
