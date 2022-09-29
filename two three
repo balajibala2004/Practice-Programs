@@ -1,0 +1,50 @@
+Scanner sc=new Scanner(System.in);  
+System.out.print("Enter the Binary Number: ");  
+//read a number from the user  
+double s=sc.nextDouble();  
+int c=0;  
+long s1=0;  
+//variable to store hexadecimal string  
+String z="";  
+while(s>0)  
+{  
+//extracting the digits by getting remainder on dividing by 10 and multiplying by increasing integral powers of 2  
+           s1=s1+(long)(Math.pow(2,c)*(long)(s%10));  
+           s=(long)s/10;  
+           c++;  
+         }  
+         while(s1>0)  
+         {  
+           long j=s1%16;  
+           if(j==10)  
+           {  
+              z="A"+z;  
+           }  
+           else if(j==11)  
+           {  
+              z="B"+z;  
+           }  
+           else if(j==12)  
+           {  
+              z="C"+z;  
+           }  
+           else if(j==13)  
+           {  
+              z="D"+z;  
+           }  
+           else if(j==14)  
+           {  
+              z="E"+z;  
+           }  
+           else if(j==15)  
+           {  
+              z="F"+z;  
+           }  
+           else  
+           {  
+              z=j+z;  
+           }  
+           s1=s1/16;  
+      }  
+//prints hexadecimal string  
+System.out.println("The respective Hexadecimal number is: "+z);  
