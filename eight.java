@@ -3,6 +3,7 @@ package first;
 public class eight {
 
 	public static void main(String[] args) {
+		
 		// TODO Auto-generated method stub
 		System.out.println("   J    a   v     v   a");
 		System.out.println("   J   a a   v   v   a a");
@@ -12,6 +13,7 @@ public class eight {
 }
 
 }
+
 
 
 
