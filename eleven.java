@@ -9,6 +9,7 @@ public class temp {
 		System.out.println("Enter the radius ");
 		Scanner o = new Scanner(System.in);
 		
+		
 		radius = o.nextDouble();
 		o.close ();
 		area = 3.1415926535897927  * radius *radius ;
